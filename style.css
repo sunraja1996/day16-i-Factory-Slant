@@ -3,7 +3,7 @@
 .content{
       margin: auto;
       width: 70%;
-      background: rgb(131, 2, 73);
+      background: rgb(131, 2, 73, 0.4);
       text-align: center;
       border-radius: 50px;
 }
