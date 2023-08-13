@@ -1,353 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Bilbo+Swash+Caps&family=Jim+Nightshade&display=swap');
 
-/* body {
-      background-repeat: no-repeat, repeat;
-      background-image: url('Images/Great-Wall-of-China-Beijing.jpg');
-          font-family: 'Beau Rivage', cursive;
-
-    font-family: 'Bilbo Swash Caps', cursive;
-
-    font-family: 'Jim Nightshade', cursive;
-} */
-
-.content{
-      margin: auto;
-      width: 70%;
-      background: rgb(131, 2, 73);
-      text-align: center;
-      border-radius: 50px;
-}
-#heading{
-      font-family: 'Jim Nightshade', cursive;
-      color: beige;
-      height: 400px;
-      font-size: 80px;
-      padding: 10px;
-      padding-top: 100px;
+body {
+  background-repeat: no-repeat, repeat;
+  font-family: 'Beau Rivage', cursive;
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-family: 'Jim Nightshade', cursive;
 }
 
-/* .a{
-      margin: 0%;
-      background-repeat: no-repeat, repeat;
-      background-image: url('Images/Taj-Mahal-Agra-India.jpg');
-      opacity: 0.5;
-      background-color: rgb(255, 255, 255);
-      background-blend-mode:darken;
-      height: 400px;
-      padding: 10%;
-} */
-.a{
-      position: relative; 
-      height: 600px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-image: url('Images/Taj-Mahal-Agra-India.jpg');
-      background-size: cover;
-      
+.content {
+  margin: auto;
+  width: 70%;
+  background: rgb(131, 2, 73);
+  text-align: center;
+  border-radius: 50px;
 }
-.a::before{
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-color: rgba(255, 255, 255, 0.63);
+
+.section {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  transform: skewY(-2deg);
 }
-.a {
-      transform: skewY(-2deg);
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.63);
 }
-.b{
-      position: relative; 
-      height: 600px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-image: url('Images/Great-Wall-of-China-Beijing.jpg');
-      background-size: cover;
-      
+
+.section.a {
+  background-image: url('Images/Taj-Mahal-Agra-India.jpg');
 }
-.b::before{
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-color: rgba(2, 187, 11, 0.336);
+
+.section.b {
+  background-image: url('Images/Great-Wall-of-China-Beijing.jpg');
+  background-color: rgba(2, 187, 11, 0.336);
 }
-.b {
-      transform: skewY(-2deg);
+
+.section.c {
+  background-image: url('Images/El-Castillo-pyramid-plaza-Toltec-state-Yucatan.jpg');
+  background-color: rgba(102, 38, 0, 0.699);
 }
-.c{
-      position: relative; 
-      height: 600px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-image: url('Images/El-Castillo-pyramid-plaza-Toltec-state-Yucatan.jpg');
-      background-size: cover;
-      
+
+.section.d {
+  background-image: url('Images/Khaznah-Petra-Jordan.jpg');
+  background-color: rgba(238, 88, 1, 0.548);
 }
-.c::before{
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-color: rgba(102, 38, 0, 0.699);
+
+.section.e {
+  background-image: url('Images/Machu-Picchu.jpg');
+  background-color: rgba(60, 63, 60, 0.61);
 }
-.c {
-      transform: skewY(-2deg);
+
+.section.f {
+  background-image: url('Images/statue-Christ-the-Redeemer-Rio-de-Janeiro.jpg');
+  background-color: rgba(255, 255, 255, 0.568);
 }
-.d{
-      position: relative; 
-      height: 600px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-image: url('Images/Khaznah-Petra-Jordan.jpg');
-      background-size: cover;
-      
+
+.section.g {
+  background-image: url('Images/Colosseum-Rome-Italy.jpg');
+  background-color: rgba(245, 200, 0, 0.712);
 }
-.d::before{
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-color: rgba(238, 88, 1, 0.548);
+
+#heading {
+  font-family: 'Jim Nightshade', cursive;
+  color: beige;
+  height: 400px;
+  font-size: 80px;
+  padding: 10px;
+  padding-top: 100px;
 }
-.d {
-      transform: skewY(-2deg);
+
+#h, #h2, #h3, #h4, #h5, #h6, #h7 {
+  font-family: 'Bilbo Swash Caps', cursive;
+  position: relative;
+  font-size: 5rem;
+  line-height: 0.9;
+  text-align: center;
+  transform: skewY(2deg);
 }
-.e{
-      position: relative; 
-      height: 600px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-image: url('Images/Machu-Picchu.jpg');
-      background-size: cover;
-      
+
+#p, #p2, #p3, #p4, #p5, #p6, #p7 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 2;
+  padding: 2rem;
+  text-align: center;
+  transform: skewY(2deg);
 }
-.e::before{
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-color: rgba(60, 63, 60, 0.61);
-}
-.e {
-      transform: skewY(-2deg);
-}
-.f{
-      position: relative; 
-      height: 600px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-image: url('Images/statue-Christ-the-Redeemer-Rio-de-Janeiro.jpg');
-      background-size: cover;
-      
-}
-.f::before{
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-color: rgba(255, 255, 255, 0.568);
-}
-.f {
-      transform: skewY(-2deg);
-}
-.g{
-      position: relative; 
-      height: 600px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-image: url('Images/Colosseum-Rome-Italy.jpg');
-      background-size: cover;
-      
-}
-.g::before{
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-color: rgba(245, 200, 0, 0.712);
-}
-.g {
-      transform: skewY(-2deg);
-}
-#h{
-      font-family: 'Bilbo Swash Caps', cursive;
-      position: relative;
-      color: #020202;  
-      font-size: 5rem;
-      line-height: 0.9;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#p{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      position: relative;
-      color: #640303;  
-      font-size: 1rem;
-      font-weight: 800;
-      line-height: 2;
-      padding: 2rem;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#h2{
-      font-family: 'Bilbo Swash Caps', cursive;
-      position: relative;
-      color: #2ffff5;  
-      font-size: 5rem;
-      line-height: 0.9;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#p2{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      position: relative;
-      color: beige;  
-      font-size: 1rem;
-      font-weight: 800;
-      line-height: 2;
-      padding: 2rem;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#h3{
-      font-family: 'Bilbo Swash Caps', cursive;
-      position: relative;
-      color: #ffffff;  
-      font-size: 5rem;
-      line-height: 0.9;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#p3{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      position: relative;
-      color: rgb(255, 255, 0);  
-      font-size: 1rem;
-      font-weight: 800;
-      line-height: 2;
-      padding: 2rem;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#h4{
-      font-family: 'Bilbo Swash Caps', cursive;
-      position: relative;
-      color: #ffffff;  
-      font-size: 5rem;
-      line-height: 0.9;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#p4{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      position: relative;
-      color: rgb(255, 255, 255);  
-      font-size: 1rem;
-      font-weight: 800;
-      line-height: 2;
-      padding: 2rem;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#h5{
-      font-family: 'Bilbo Swash Caps', cursive;
-      position: relative;
-      color: #111111;  
-      font-size: 5rem;
-      line-height: 0.9;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#p5{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      position: relative;
-      color: rgb(255, 255, 255);  
-      font-size: 1rem;
-      font-weight: 800;
-      line-height: 2;
-      padding: 2rem;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#h6{
-      font-family: 'Bilbo Swash Caps', cursive;
-      position: relative;
-      color: #111111;  
-      font-size: 5rem;
-      line-height: 0.9;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#p6{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      position: relative;
-      color: rgb(3, 6, 165);  
-      font-size: 1rem;
-      font-weight: 800;
-      line-height: 2;
-      padding: 2rem;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#h7{
-      font-family: 'Bilbo Swash Caps', cursive;
-      position: relative;
-      color: #111111;  
-      font-size: 5rem;
-      line-height: 0.9;
-      text-align: center;
-      transform: skewY(2deg);
-}
-#p7{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      position: relative;
-      color: rgb(255, 0, 0);  
-      font-size: 1rem;
-      font-weight: 800;
-      line-height: 2;
-      padding: 2rem;
-      text-align: center;
-      transform: skewY(2deg);
-}
-.thank{
-      height: 300px;
-      place-content: center;
-      padding: 20px;
-      color: #ffffff;
-      font-size: 2rem;
+
+.thank {
+  height: 300px;
+  place-content: center;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 2rem;
 }
